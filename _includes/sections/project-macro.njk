@@ -1,0 +1,18 @@
+{% macro service(shadow, color, linkText, para, readMoreUrl) %}
+
+<!-- Added hover effect on the container and a transition for smooth effect -->
+<div class="p-6 bg-white border border-gray-400 rounded-lg {{ shadow }} hover:bg-blue-100 transition duration-300 ease-in-out">
+
+   <div class="w-12 h-1.5 {{ color }}"></div>
+
+   <a href="{{ readMoreUrl }}" class="mt-4 text-lg text-blue-600">
+      {{ linkText }} &rarr;
+   </a>
+
+   <p class="mt-4 text-blue-600">
+      {{ para }}
+   </p>
+
+</div>
+
+{% endmacro %}

@@ -1,0 +1,21 @@
+{% macro service(shadow, color, heading, para, imageUrl, readMoreUrl) %}
+<div class="p-6 bg-white border border-gray-500 rounded-lg {{ shadow }}">
+
+   <img src="{{ imageUrl }}" alt="{{ heading }}" class="w-full h-auto rounded-t-md">
+
+   <div class="w-12 h-1.5 {{ color }} mt-4"></div>
+
+   <h3 class="font-semibold text-xl mt-2.5">{{ heading }}</h3>
+
+
+   <p class="mt-4 text-black">
+      {{ para }}
+   </p>
+
+
+   <a href="{{ readMoreUrl }}" class="mt-4 inline-block text-cyan-300">
+      Read More &rarr;
+   </a>
+
+</div>
+{% endmacro %}

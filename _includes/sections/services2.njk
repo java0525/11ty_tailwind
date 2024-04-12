@@ -1,0 +1,19 @@
+<section class="px-8 pt-10">
+    <h2 class="text-center text-4xl font-bold">My blog posts</h2>
+    <p class="mx-auto mt-4 max-w-3xl text-center">
+       Learn how to improve your coding skills with Java.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-12">
+       {% import 'sections/service-macro2.njk' as macro %}
+ 
+       {{ macro.service('shadow-sm', 'bg-cyan-300', 'Blog 1', 'DEV BLOG #1: CLI SCRIPT. An Introduction to Automation with Shell Scripting ' , 'https://miro.medium.com/v2/resize:fit:1400/1*cWNqDxNXYGvoL4oJx6aJow.png' , 'https://github.com/java0525/blog-1/blob/main/blog.md') }}
+
+
+       {{ macro.service('shadow-lg', 'bg-pink-300', 'Blog 2', 'DEV BLOG #2: FRAMEWORK. Eleventy Essentials: From Zero to Hero with Project Setup, Layouts, and Styling ' , 'https://repository-images.githubusercontent.com/112150776/57c07300-6132-11e9-992f-604a24e67c83' , 'https://github.com/java0525/blog-2/blob/main/blog-2.md') }}
+ 
+       {{ macro.service('shadow-sm', 'bg-purple-300', 'Blog 3', 'DEV BLOG #3: CMS / SSG. ' , 'https://images.contentstack.io/v3/assets/blt7359e2a55efae483/blt8e02753b9d73d101/65a001b096b1f604b8fe85c7/Frame_34407.png') }}
+    </div>
+    
+ </section>
+ <br>

@@ -1,0 +1,26 @@
+
+<section class="px-2 pt-16 bg-purple-50">
+
+   <h2 class="text-center text-4xl font-bold">Welcome to my</h2>
+
+   <h2 class="text-center text-4xl font-bold text-blue-600 pl-4">Projects</h2>
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-12">
+       {% import 'sections/project-macro.njk' as macro %}
+
+       {{ macro.service('shadow-lg', 'bg-pink-300', 'Rock-Paper-Scissors', 'A quick, fun game blending strategy and chance, perfect for decision-making or settling friendly disputes.', 'https://java0525.github.io/rock-paper-scissors/') }}
+       {{ macro.service('shadow-lg', 'bg-cyan-300', 'Quote Generator', 'Spark Inspiration: Click for a burst of wisdom.', 'https://java0525.github.io/quote-generator/') }}
+       {{ macro.service('shadow-lg', 'bg-purple-300', 'Media Gallery', 'Description', 'https://www.google.com/') }}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-12">
+       {% import 'sections/project-macro.njk' as macro %}
+
+       {{ macro.service('shadow-lg', 'bg-green-300', 'Apple News Website', 'Description', 'https://www.google.com/') }}
+       {{ macro.service('shadow-lg', 'bg-orange-300', 'Tribute Page', 'Description', 'https://www.google.com/') }}
+       {{ macro.service('shadow-lg', 'bg-teal-300', 'Task Manager App', 'Description', 'https://www.google.com/') }}
+    </div>
+    <br>
+</section>
